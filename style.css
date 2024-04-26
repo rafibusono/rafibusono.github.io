@@ -1,0 +1,75 @@
+.center {
+    width: 100vw; /* Adjust width as needed */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 230px;
+    height: 230px;
+    background-image: url(pxArt-removebg-preview.png);
+    background-size: cover;
+    position: relative;
+    margin: 50px;
+}
+
+.card:hover {
+    background-image: url(pxArt2-removebg-preview.png);
+}
+
+.card .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.card:hover .img-top {
+    display: inline;
+}
+
+button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+@media only screen and (max-width: 600px) {
+    .letter_bd {
+        width: 250px; /* Adjust width as needed */
+    }
+
+    .modal-dialog {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: calc(100vh - 20px); /* Adjust as needed */
+        margin: 0;
+    }
+}
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    min-height: 100%;
+    position: relative;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
